@@ -1414,7 +1414,7 @@ Sizzle.matchesSelector = function( elem, expr ) {
 					elem.document && elem.document.nodeType !== 11 ) {
 				return ret;
 			}
-		} catch (e) {}
+		} catch (e) {} // eslint-disable-line
 	}
 
 	return Sizzle( expr, document, null, [ elem ] ).length > 0;
