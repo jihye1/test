@@ -1,3 +1,3 @@
 # test
 test repository
-[![DeepScan grade](https://stage.deepscan.io/api/teams/6494/projects/23671/branches/721392/badge/grade.svg)](https://stage.deepscan.io/dashboard#view=project&tid=6494&pid=23671&bid=721392)
+[![DeepScan grade](https://deepscan.io/api/teams/20255/projects/25078/branches/777497/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=20255&pid=25078&bid=777497)
