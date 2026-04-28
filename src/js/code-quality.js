@@ -161,17 +161,10 @@ function g(x, y) {
     x.p == y.p; // UNUSED_EXPR alarm
 }
 
-import {
-    count,
-    increment // UNUSED_IMPORT alarm
-} from "my-counter";
-console.log(count);
 
-let init = require("initialize"); // UNUSED_REQUIRE alarm
-let foo = require("foo"); // UNUSED_REQUIRE alarm
-module.exports = function () { }
-
-function foo(url) {
-    var target = url + "user" + user; // UNUSED_VAR_ASSIGN alarm
-    target = url.replace(/\.|\?|\&|\/|\=|\:|\-|\s/gi, "");
+function CWE_129(x) { // ARRAY_INDEX_NEGATIVE
+  const arr = [1, 2, 3];
+  if (x < 0) {
+    arr[x] = 3;
+  }
 }
