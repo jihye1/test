@@ -1,21 +1,3 @@
-var memo = {}, arr = ["apple", "lemon", "orange"];
-var ret1 = arr.map(function (curval, index) { // ARRAY_CALLBACK_RETURN_MISSING alarm because no value is returned in the callback function.
-    memo[curval] = index;
-});
-console.log(ret1); // 'ret1' is filled with undefined.
-
-var ret2 = Array.from([1, 2, 3], function (x) { // ARRAY_CALLBACK_RETURN_MISSING alarm because no value is returned in the callback function.
-    x = x + 3;
-});
-console.log(ret2); // 'ret2' is filled with undefined.
-
-function foo() {
-    bar = 4; // ASSIGN_BEFORE_DECL alarm
-    var bar;
-    console.log(bar);
-}
-foo();
-
 // Example 1
 a = a; // ASSIGN_SAME_VALUE alarm
 
