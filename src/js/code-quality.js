@@ -13,3 +13,12 @@ function CWE_489_569_570_571() { // CONSTANT_CONDITION
     console.log('Do something');
   }
 }
+
+
+function CWE_489_569_570_571() { // CONSTANT_CONDITION
+  const x = "Fo";
+  const y = x + "Bar";
+  if (y === "FooBar") {
+    console.log('Do something');
+  }
+}
