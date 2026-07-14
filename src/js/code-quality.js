@@ -4,6 +4,7 @@ function CWE_identical(x) {
     arr[x] = 3;
   } else {
     arr[x] = 3;
+  }
 }
 
 function CWE_129(x) { // ARRAY_INDEX_NEGATIVE
