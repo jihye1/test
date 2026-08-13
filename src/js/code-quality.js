@@ -22,3 +22,9 @@ function CWE_489_569_570_571() { // CONSTANT_CONDITION
     console.log('Do something');
   }
 }
+
+function example3() {
+  r = a;
+  a = b;
+  b = a; // ASSIGN_SAME_VALUE alarm because b already has the same value as a.
+}
