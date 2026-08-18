@@ -1,4 +1,4 @@
-var memo = {}, arr = ["apple", "lemon", "orange"];
+evar memo = {}, arr = ["apple", "lemon", "orange"];
 var ret1 = arr.map(function (curval, index) { // ARRAY_CALLBACK_RETURN_MISSING alarm because no value is returned in the callback function.
     memo[curval] = index;
 });
@@ -179,17 +179,8 @@ function g(x, y) {
     x.p == y.p; // UNUSED_EXPR alarm
 }
 
-import {
-    count,
-    increment // UNUSED_IMPORT alarm
-} from "my-counter";
-console.log(count);
-
-let init = require("initialize"); // UNUSED_REQUIRE alarm
-let foo = require("foo"); // UNUSED_REQUIRE alarm
-module.exports = function () { }
-
-function foo(url) {
-    var target = url + "user" + user; // UNUSED_VAR_ASSIGN alarm
-    target = url.replace(/\.|\?|\&|\/|\=|\:|\-|\s/gi, "");
+function example333() {
+  r = a;
+  a = b;
+  b = a; // ASSIGN_SAME_VALUE alarm because b already has the same value as a.
 }
